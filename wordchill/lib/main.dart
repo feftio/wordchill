@@ -42,23 +42,21 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         title: Text(widget.title),
       ),
-      body: Padding(
-          padding: EdgeInsets.all(10),
-          child: GridView.builder(
-              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                  crossAxisCount: 3,
-                  mainAxisExtent: 70,
-                  crossAxisSpacing: 5.0,
-                  mainAxisSpacing: 5.0),
-              itemCount: 15,
-              padding: EdgeInsets.all(15),
-              itemBuilder: (_, index) {
-                return CodenamesCard(
-                  text: "hello ${index + 1}",
-                  type: CardType.blue,
-                  callback: listenCard,
-                );
-              })),
+      body: GridView.builder(
+          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+              crossAxisCount: 3,
+              mainAxisExtent: 70,
+              crossAxisSpacing: 5.0,
+              mainAxisSpacing: 5.0),
+          itemCount: 15,
+          padding: EdgeInsets.all(30),
+          itemBuilder: (_, index) {
+            return CodenamesCard(
+              text: "hello ${index + 1}",
+              type: CardType.red,
+              callback: listenCard,
+            );
+          }),
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
         tooltip: 'Increment',
