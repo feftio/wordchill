@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "952576845635",
+    "project_id": "wordchill",
+    "storage_bucket": "wordchill.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:952576845635:android:06bed67af547932f7331f6",
+        "android_client_info": {
+          "package_name": "com.example.wordchill"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "952576845635-81g7aulvsrnlm1h7jhblneo8oucu06pr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRowDkJINVQwYWyggIcK7JoY6cpfAIYAI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "952576845635-81g7aulvsrnlm1h7jhblneo8oucu06pr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

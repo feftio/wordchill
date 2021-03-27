@@ -34,6 +34,7 @@ class _CodenamesCardState extends State<CodenamesCard> {
           _cardColor = Colors.red;
           break;
         case CardType.grey:
+          _cardColor = Colors.grey;
           break;
       }
     });
