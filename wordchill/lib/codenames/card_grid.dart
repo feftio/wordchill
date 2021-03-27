@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:wordchill/codenames/card.dart';
+import 'package:wordchill/utils/random_service.dart';
 
 class CardGrid extends StatelessWidget {
-  const CardGrid({Key key}) : super(key: key);
+  CardGrid({Key key}) : super(key: key) {
+    print('hello');
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -13,11 +16,12 @@ class CardGrid extends StatelessWidget {
             crossAxisSpacing: 5.0,
             mainAxisSpacing: 5.0),
         itemCount: 15,
-        padding: EdgeInsets.all(30),
+        padding: EdgeInsets.only(top: 50, left: 30, right: 30, bottom: 30),
         itemBuilder: (_, index) {
           return CodenamesCard(
             text: "hello ${index + 1}",
-            type: CardType.red,
+            type: RandomService.choose(
+                [CardType.black, CardType.blue, CardType.grey, CardType.red]),
             callback: (String text) {
               print(text);
             },

@@ -25,17 +25,30 @@ class _CodenamesCardState extends State<CodenamesCard> {
       if (opened) return;
       opened = true;
       widget.callback(widget.text);
-      _textColor = Colors.white;
       switch (widget.type) {
         case CardType.blue:
-          _cardColor = Colors.blue;
+          {
+            _textColor = Colors.white;
+            _cardColor = Colors.blue;
+          }
           break;
         case CardType.red:
-          _cardColor = Colors.red;
+          {
+            _textColor = Colors.white;
+            _cardColor = Colors.red;
+          }
           break;
         case CardType.grey:
-          _cardColor = Colors.grey;
+          {
+            _textColor = Colors.white;
+            _cardColor = Colors.grey;
+          }
           break;
+        case CardType.black:
+          {
+            _textColor = Colors.white;
+            _cardColor = Colors.black87;
+          }
       }
     });
   }
